@@ -1,0 +1,86 @@
+h1 {
+  color: #000000; 
+}
+h2 {
+  color: #000000; 
+}
+p {
+  color: rgb(255, 255, 255); 
+}
+li {
+  color: rgb(0, 0, 0);
+}
+strong {
+  color: #000000;
+}
+a {
+  color: red;
+}
+h1 {
+  font-family: 'Arial', sans-serif; 
+  font-size: 44px; 
+  font-weight: bold; 
+}
+
+p {
+  font-family: 'Verdana', sans-serif; 
+  font-size: 18px; 
+  font-style: italic; 
+}
+
+
+body {
+  background-color: #3d3c3c; 
+  
+}
+li {
+  font-family: 'Verdana', sans-serif; 
+  font-size: 18px; 
+  font-style: italic;
+}
+h2 {
+  font-family: 'Arial', sans-serif; 
+  font-size: 36px; 
+  font-weight: bold;
+}
+strong {
+  font-family: 'Arial', sans-serif; 
+  font-size: 18px; 
+  font-weight: bold;
+}
+.header {
+  background-color: rgb(245, 172, 15);
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.introduction {
+  font-size: 1.2em;
+  margin: 20px;
+  line-height: 1.5;
+}
+
+.subjects, .favorites {
+  background-color: rgb(255, 242, 204);
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.moods, .neighbors{
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(213, 232, 212);
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.mood-item {
+  text-align:justify;
+}
+
+.validators {
+  text-align: center;
+  margin-top: 20px;
+}
