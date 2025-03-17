@@ -1,13 +1,12 @@
 document.querySelectorAll('.show-btn').forEach(button => {
     button.addEventListener('click', function() {
-        // ดึงข้อมูลจาก data-exercise attribute
         const exerciseId = this.getAttribute('data-exercise');
         
-        // กำหนด URL ที่จะเชื่อมโยงไป
-        const url = `10 challenges/challenge${exerciseId}.html`;  // รูปแบบ URL สำหรับไฟล์ทั้งหมด
+       
+        const url = `10 challenges/challenge${exerciseId}.html`; 
 
-        // เปลี่ยนเส้นทางไปยังไฟล์
-        window.location.href = `../10 challenges/challenge${exerciseId}.html`;  // ใช้ exerciseId ที่ดึงมาแทน
+        
+        window.location.href = `../10 challenges/challenge${exerciseId}.html`;  
     });
 });
 
@@ -17,21 +16,20 @@ document.addEventListener("DOMContentLoaded", function () {
     const modalImg = document.getElementById("modal-img");
     const closeBtn = document.querySelector(".close");
 
-    // ซ่อน Modal ตั้งแต่แรก (ป้องกันการเปิดอัตโนมัติ)
     modal.style.display = "none";
 
     profilePic.addEventListener("click", function () {
-        modal.style.display = "flex";  // แสดง Modal เมื่อคลิก
+        modal.style.display = "flex"; 
         modalImg.src = profilePic.src;
     });
 
     closeBtn.addEventListener("click", function () {
-        modal.style.display = "none";  // ปิด Modal เมื่อกดปุ่ม X
+        modal.style.display = "none";  
     });
 
     modal.addEventListener("click", function (event) {
         if (event.target === modal) {
-            modal.style.display = "none";  // ปิด Modal เมื่อคลิกที่พื้นหลัง
+            modal.style.display = "none";  
         }
     });
 });
